@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
 import { useState , useEffect} from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios'
@@ -7,8 +7,10 @@ import axios from 'axios'
 
 function Register() {
 
-  // const notifyRegister = () => toast('Registration Successful !!'); 
+  // const notifyRegister = () => toast('Registration Successful !!');
+  const navigate = useNavigate() 
   const noInput = () => toast('Does not contain any password !!'); 
+ 
 
   const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
@@ -54,6 +56,12 @@ function Register() {
 
   const handleDob = (e) => {
     setDob(e.target.value)
+  }
+
+  const handleHomeClick = (e) => {
+    e.preventDefault()
+    navigate('/')
+
   }
 
   const handleFileChange = (event) => {
@@ -137,7 +145,9 @@ function Register() {
     <Toaster
           position='top-center'
           /> 
-    <div className='h-[1600px] w-screen bg-[url("../../public/Images/loginANDregBG4.jpeg")] bg-cover absolute'></div>
+    <div className='h-[1600px] w-screen bg-[url("../../public/Images/loginANDregBG4.jpeg")] bg-cover absolute'>
+      <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer'>Home</button>
+    </div>
         <div className='backdrop-blur top-[20px] bg-none px-10 py-5 rounded-3xl border-4 border-grey relative h-max'>
         
             <h1 className='text-3xl mt-2 text-center text-white relative px-32'>Register</h1>
@@ -238,7 +248,7 @@ function Register() {
                     
                 </div>
                 <div className='mt-4 mb-4'>
-                      <label className='text-small text-white' htmlFor="avatar">Choose your profile: </label>
+                      <label className='text-small text-white' htmlFor="avatar">Choose your photo: </label>
                       {!isClicked ? (
                         <input id="avatar" type="file" onChange={handleFileChange} className="block w-full text-sm text-slate-500
                         file:mr-4 file:py-2 file:px-4

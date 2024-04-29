@@ -22,8 +22,8 @@ function Home() {
       <navbar className='absolute w-screen top-[5px] left-0 h-[70px] flex items-center p-12 place-content-between'>
         <div className='text-5xl md:text-5xl font-poppins lg:text-6xl ml-[35px] text-white font-bold shadow-md rounded-xl w-[295px] px-4'><span className='font-outline-4'>Chat</span><span className='text-[#48cae4]'>Box</span></div>
         <div className='md:mr-[65px] lg:mr-[100px] flex place-content-around mb-3  w-[350px]'>
-          <button onClick={handleLoginClick} className='mr-10 mb-4 text-black md:mr-6 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-white hover:cursor-pointer rounded-full w-[80px] h-[45px] bg-[#48cae4]'>Login</button>
-          <button onClick={handleRegisterClick} className='ml-6 mb-4 text-black md:ml-2 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-white hover:cursor-pointer rounded-full w-[110px] h-[45px] bg-[#48cae4]'>Register</button>
+          <button onClick={handleLoginClick} className='mr-10 mb-4 text-white md:mr-6 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-black hover:cursor-pointer rounded-full w-[80px] h-[45px] bg-[#48cae4]'>Login</button>
+          <button onClick={handleRegisterClick} className='ml-6 mb-4 text-white md:ml-2 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-black hover:cursor-pointer rounded-full w-[110px] h-[45px] bg-[#48cae4]'>Register</button>
         </div>
       </navbar>
       <div className='top-[185px] left-20 absolute font-extrabold text-3xl mb-2 text-balance w-full text-[#48cae4]'>
@@ -57,7 +57,7 @@ function Home() {
         </p>
         </p>
       </hero>
-      <div className='absolute w-1/3 h-[500px] bg-slate-300 opacity-40 right-20 top-[170px] rounded-3xl'>
+      <div className='absolute w-1/3 h-[500px] bg-slate-300 opacity-30 right-20 top-[170px] rounded-3xl'>
         {/* <div className='absolute w-[2.5%] h-[5%] bottom-[135px] left-[220px] bg-[#be95c4] rounded-full animate-ping'></div> */}
       </div>
       <div className='absolute w-[20%] h-[10%] bottom-[145px]  right-[0px] bg-white rounded-3xl opacity-0 animate-message1 animation-delay-2000'>
