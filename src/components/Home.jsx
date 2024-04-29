@@ -18,12 +18,12 @@ function Home() {
   }
 
   return (
-    <div className='bg-[url("../../public/Images/bgImageHome.jpg")] h-screen w-screen py-4 relative overflow-hidden bg-cover'>
+    <div className='bg-[url("../../public/Images/6th.jpg")] h-screen w-screen py-4 relative overflow-hidden bg-cover'>
       <navbar className='absolute w-screen top-[5px] left-0 h-[70px] flex items-center p-12 place-content-between'>
         <div className='text-5xl md:text-5xl font-poppins lg:text-6xl ml-[35px] text-white font-bold shadow-md rounded-xl w-[295px] px-4'><span className='font-outline-4'>Chat</span><span className='text-[#48cae4]'>Box</span></div>
         <div className='md:mr-[65px] lg:mr-[100px] flex place-content-around mb-3  w-[350px]'>
-          <button onClick={handleLoginClick} className='mr-10 mb-4 text-white md:mr-6 text-2xl mt-4 md:text-2xl lg:text-2xl hover:text-[#48cae4] hover:cursor-pointer'>Login</button>
-          <button onClick={handleRegisterClick} className='ml-6 mb-4 text-white md:ml-2 text-2xl mt-4 md:text-2xl lg:text-2xl hover:text-[#48cae4] hover:cursor-pointer'>Register</button>
+          <button onClick={handleLoginClick} className='mr-10 mb-4 text-black md:mr-6 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-white hover:cursor-pointer rounded-full w-[80px] h-[45px] bg-[#48cae4]'>Login</button>
+          <button onClick={handleRegisterClick} className='ml-6 mb-4 text-black md:ml-2 text-2xl mt-4 md:text-xl lg:text-2xl hover:text-white hover:cursor-pointer rounded-full w-[110px] h-[45px] bg-[#48cae4]'>Register</button>
         </div>
       </navbar>
       <div className='top-[185px] left-20 absolute font-extrabold text-3xl mb-2 text-balance w-full text-[#48cae4]'>
@@ -39,8 +39,8 @@ function Home() {
         }}
       /></div>
       <hero className='hidden md:block absolute top-[190px] left-20 bottom-[0] w-[40%] h-[70%] rounded-3xl'>
-        <p className='text-[#48cae4] font-semibold font-poppins tracking-wider leading-8'>
-        <p className='absolute top-14 text-balance font-medium text-lg mt-[20px] text-justify'>
+        <p className='text-[#000000] font-semibold font-poppins tracking-wider leading-8'>
+        <p className='absolute top-14 h-[470px] text-balance font-medium text-lg mt-[20px] text-justify'>
           ChatBox isn't just about chatting; it's about creating unforgettable moments in real-time. With our innovative room code system powered by sockets, every conversation becomes an exclusive event. Simply generate a room code, share it with friends, and dive into the discussion.
           But here's the twist: once you leave the room, the chatter vanishes into the digital ether. No archives, no traces, just pure, ephemeral communication. It's like a whisper in the wind, meant only for those present in the moment.
           Built on the robust MERN stack and enhanced with cutting-edge technologies like Multer, Cloudinary, React Toaster, Axios, and Tailwind CSS, ChatBox offers a seamless and secure chatting experience unlike any other.
@@ -49,7 +49,7 @@ function Home() {
         </p>
       </hero>
       <hero className='md:hidden absolute top-[170px] left-20 bottom-[0] w-[40%] h-[70%] rounded-3xl'>
-        <p className='text-[#48cae4] font-semibold font-poppins tracking-wider leading-8'>
+        <p className='text-[#010303] font-semibold font-poppins tracking-wider leading-8'>
         <p className='font-extrabold text-3xl mb-2 text-balance'>Welcome to ChatBox - Where Every Conversation is Unique!</p>
         <p className='text-balance font-medium text-lg mt-[20px]'> Experience unique, real-time conversations with our innovative room code system. Simply generate a code, share it, and dive in. 
         Once you leave, conversations vanish - pure, ephemeral communication. Built on the MERN stack with Multer, Cloudinary, React Toaster, Axios, and Tailwind CSS.
