@@ -116,60 +116,60 @@ function Login() {
     <Toaster 
         position='top-center
         '/>
-    <div className='h-[1600px] w-screen bg-[url("../../public/Images/loginANDregBG4.jpeg")] bg-cover absolute'>
-          <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer'>Home</button>
+    <div className='h-[1600px] w-screen bg-[url("/Images/loginANDregBG4.jpeg")] bg-cover absolute animate-none'>
+          <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer animate-appear'>Home</button>
     </div>
-    <div className='backdrop-blur w-[35%] h-[68%] relative bg-none top-[20px] px-20 py-5 rounded-3xl border-4 border-grey'>
+    <div className='backdrop-blur w-[35%] h-[68%] relative bg-none top-[20px] px-20 py-5 rounded-3xl border-4 border-grey animate-appear'>
         
-        <div className='text-3xl mt-2 px-32 text-center text-white relative'>
+        <div className='text-3xl mt-2 px-32 text-center text-white relative animate-appear'>
          <h1>Login</h1>
         </div>
-        <p className='font-medium text-lg text-black-500 mt-10 text-center'></p>
+        <p className='font-medium text-lg text-black-500 mt-10 text-center animate-appear'></p>
         <form onSubmit={handleLogin}>
         <div>
-            <div className='mt-4 mb-4 relative'>
+            <div className='mt-4 mb-4 relative animate-appear'>
                 <input type="text"
                   onChange = {handleUsername}
                   value={username}
-                  className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                  className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                   placeholder='Username' 
                   id='username'
                   autocomplete='off'
                 />
             </div>
-            <div className='mt-4 mb-4 relative'>
+            <div className='mt-4 mb-4 relative animate-appear'>
                 <input type="text"
                   onChange = {handleEmail}
                   value={email}
-                  className='w-full border-4  placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey text-white p-4  mt-1 bg-transparent relative'
+                  className='w-full border-4  placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey text-white p-4  mt-1 bg-transparent relative animate-appear'
                   placeholder='Email' 
                   id='email'
                   autocomplete='off'
                 />
             </div>
-            <div className='mt-4 mb-4 relative'>
+            <div className='mt-4 mb-4 relative animate-appear'>
                 <input type="password"
                   onChange = {handlePassword}
                   value={password}
-                  className='w-full border-4  placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey text-white p-4  mt-1 bg-transparent relative'
+                  className='w-full border-4  placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey text-white p-4  mt-1 bg-transparent relative animate-appear'
                   placeholder='Password'
                   id='pass' 
 
                 />
-                <div className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.02] ease-in-out hover:text-black absolute top-[23px] text-white opacity-80 right-4 cursor-pointer' onClick={handleClick}>
+                <div className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.02] ease-in-out hover:text-black absolute top-[23px] text-white opacity-80 right-4 cursor-pointer animate-appear' onClick={handleClick}>
                   {show ? "Hide": "Show"}
                   </div>
             </div>
-            <div className='mt-10 flex flex-col w-full relative'>
+            <div className='mt-10 flex flex-col w-full relative animate-appear'>
                 <button 
                 type='submit'
-                className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black-500 text-lg relative'>
+                className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black-500 text-lg relative animate-appear'>
                     Login
                 </button>
-                <div className='mt-10 flex justify-center items-center relative'>
-                   <p className='font-small text-base text-white relative'>Don't have an account ?</p>
+                <div className='mt-10 flex justify-center items-center relative animate-appear'>
+                   <p className='font-small text-base text-white relative animate-appear'>Don't have an account ?</p>
                    <Link to = "/register">
-                   <button className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.08] ease-in-out hover:text-black py-3 text-white text-base font-medium ml-2 relative'>Register</button>
+                   <button className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.08] ease-in-out hover:text-black py-3 text-white text-base font-medium ml-2 relative animate-appear'>Register</button>
                    </Link>
                 </div>
             </div>

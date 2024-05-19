@@ -146,18 +146,18 @@ function Register() {
           position='top-center'
           /> 
     <div className='h-[1600px] w-screen bg-[url("../../public/Images/loginANDregBG4.jpeg")] bg-cover absolute'>
-      <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer'>Home</button>
+      <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer animate-appear'>Home</button>
     </div>
-        <div className='backdrop-blur top-[20px] bg-none px-10 py-5 rounded-3xl border-4 border-grey relative h-max'>
+        <div className='backdrop-blur top-[20px] bg-none px-10 py-5 rounded-3xl border-4 border-grey relative h-max animate-appear'>
         
-            <h1 className='text-3xl mt-2 text-center text-white relative px-32'>Register</h1>
-            <p className='font-medium text-lg text-gray-500 mt-6'></p>
+            <h1 className='text-3xl mt-2 text-center text-white relative px-32 animate-appear'>Register</h1>
+            <p className='font-medium text-lg text-gray-500 mt-6 animate-appear'></p>
             <form onSubmit={handleSubmit} >
             <div>
-                <div className='mt-3 mb-3 relative'>
+                <div className='mt-3 mb-3 relative animate-appear'>
                     {!isClicked ? (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                       placeholder='Enter your username' 
                       id='username'
                       autocomplete='off'
@@ -166,7 +166,7 @@ function Register() {
                       />
                     ) : (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your username' 
                     id='username'
                     autocomplete='off'
@@ -177,10 +177,10 @@ function Register() {
                     ) }
                     
                 </div>
-                <div className='mt-3 mb-3 relative'>
+                <div className='mt-3 mb-3 relative animate-appear'>
                     {!isClicked ? (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                       placeholder='Enter your email' 
                       id='email'
                       autocomplete='off'
@@ -189,7 +189,7 @@ function Register() {
                       />
                     ) : (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your email' 
                     id='email'
                     autocomplete='off'
@@ -200,11 +200,11 @@ function Register() {
                     ) }
                     
                 </div>
-                <div className='mt-3 mb-3 relative'>
+                <div className='mt-3 mb-3 relative animate-appear'>
                     {!isClicked ? (
                     <input
                     type='password'
-                    className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                    className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your password'
                     id='pass' 
                     value={password}
@@ -212,7 +212,7 @@ function Register() {
                     />
                     ) : (
                       <input type="password"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your password'
                     id='pass' 
                     value={password}
@@ -220,14 +220,14 @@ function Register() {
                     readOnly
                     />
                     ) }
-                  <div className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.02] ease-in-out hover:text-black absolute top-[23px] text-white opacity-80 right-4 cursor-pointer' onClick={handleClick}>
+                  <div className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.02] ease-in-out hover:text-black absolute top-[23px] text-white opacity-80 right-4 cursor-pointer animate-appear' onClick={handleClick}>
                   {show ? "Hide": "Show"}
                   </div>
                 </div>
-                <div className='mt-3 mb-3 relative'>
+                <div className='mt-3 mb-3 relative animate-appear'>
                     {!isClicked ? (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your birth date' 
                     id='dob'
                     autocomplete='off'
@@ -236,7 +236,7 @@ function Register() {
                     />
                     ) : (
                       <input type="text"
-                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative'
+                      className='w-full border-4 placeholder:text-white placeholder:opacity-80 focus:outline-none focus:border-white rounded-full border-grey p-4 text-white mt-1 bg-transparent relative animate-appear'
                     placeholder='Enter your birth date' 
                     id='dob'
                     autocomplete='off'
@@ -247,11 +247,12 @@ function Register() {
                     ) }
                     
                 </div>
-                <div className='mt-4 mb-4'>
-                      <label className='text-small text-white' htmlFor="avatar">Choose your photo: </label>
+                <div className='mt-4 mb-4 animate-appear'>
+                      <label className='text-small text-white animate-appear' htmlFor="avatar">Choose your photo: </label>
                       {!isClicked ? (
-                        <input id="avatar" type="file" onChange={handleFileChange} className="block w-full text-sm text-slate-500
+                        <input id="avatar" type="file" onChange={handleFileChange} className="animate-appear block w-full text-sm text-slate-500
                         file:mr-4 file:py-2 file:px-4
+                        file:hover:cursor-pointer active:scale-[.98] active:duration-75  transition-all hover:scale-[1.010] ease-in-out cursor-pointer
                         file:rounded-full file:border-0
                         file:text-sm file:font-semibold
                         file:bg-violet-50 file:text-button
@@ -259,7 +260,7 @@ function Register() {
                         "/>
                       ) : 
                       (
-                        <input id="avatar" type="file" className="block w-full text-sm text-slate-500
+                        <input id="avatar" type="file" className="animate-appear block w-full text-sm text-slate-500
                         file:mr-4 file:py-2 file:px-4
                         file:rounded-full file:border-0
                         file:text-sm file:font-semibold
@@ -270,24 +271,24 @@ function Register() {
                       )
                       }     
                 </div>
-                <div className='mt-8 flex flex-col w-full'>
+                <div className='mt-8 flex flex-col w-full animate-appear'>
                     {!isClicked ? (
                         <button
                         type='submit'
-                        className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black text-lg relative'>
+                        className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black text-lg relative animate-appear'>
                             Register
                         </button>
                     ) : (
                         <button
                         disabled
-                        className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black-500 text-lg relative'>
+                        className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.03] ease-in-out py-3 rounded-full bg-white text-black-500 text-lg relative animate-appear'>
                             Register
                         </button>
                     )}
-                    <div className='mt-8 flex justify-center items-center'>
-                    <p className='font-medium text-white text-base'>Already have an account ?</p>
+                    <div className='mt-8 flex justify-center items-center animate-appear'>
+                    <p className='font-medium text-white text-base animate-appear'>Already have an account ?</p>
                     <Link to="/login">
-                    <button className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.08] ease-in-out hover:text-black py-3 text-white text-base font-medium ml-2 relative'>Login</button>
+                    <button className='active:scale-[.98] active:duration-75  transition-all hover:scale-[1.08] ease-in-out hover:text-black py-3 text-white text-base font-medium ml-2 relative animate-appear'>Login</button>
                     </Link>
                     </div>
                 </div>

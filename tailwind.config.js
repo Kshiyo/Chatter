@@ -14,6 +14,14 @@ export default {
         'button': '#5e548e',
       },
      keyframes: {
+      'appear': {
+        "0%": {
+           opacity: "0",
+        },
+        "100%": {
+           opacity: "1",
+        }
+      },
       'message1': {
         '30%': {
           transform: "translateX(-95px)",
@@ -42,6 +50,7 @@ export default {
       }
      },
      animation: {
+      'appear' : 'appear 1900ms',
       'message1': 'message1 6s linear infinite',
       'message2': 'message2 6s linear infinite'
      },
