@@ -116,7 +116,7 @@ function Login() {
     <Toaster 
         position='top-center
         '/>
-    <div className='h-[1600px] w-screen bg-[url("/Images/loginANDregBG4.jpeg")] bg-cover absolute animate-none'>
+    <div className='h-[1600px] w-screen bg-[url("/Images/loginANDregBG4.jpeg")] bg-cover absolute animate-zoom-in-out'>
           <button onClick={handleHomeClick} className='ml-[1050px] mb-4 text-black text-xl mt-[450px] hover:cursor-pointer rounded-full w-[100px] h-[40px] bg-white active:scale-[.98] active:duration-75  transition-all hover:scale-[1.10] ease-in-out cursor-pointer animate-appear'>Home</button>
     </div>
     <div className='backdrop-blur w-[35%] h-[68%] relative bg-none top-[20px] px-20 py-5 rounded-3xl border-4 border-grey animate-appear'>

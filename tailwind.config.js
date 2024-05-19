@@ -14,6 +14,17 @@ export default {
         'button': '#5e548e',
       },
      keyframes: {
+      'zoom-in-out': {
+        "0%": {
+          transform: "scale(1)" ,
+        },
+        "50%": {
+          transform: "scale(1.05)" ,
+        },
+        "100%": {
+          transform: "scale(1)" ,
+        }
+      },
       'appear': {
         "0%": {
            opacity: "0",
@@ -50,6 +61,7 @@ export default {
       }
      },
      animation: {
+      'zoom-in-out' : 'zoom-in-out 10s linear infinite',
       'appear' : 'appear 1900ms',
       'message1': 'message1 6s linear infinite',
       'message2': 'message2 6s linear infinite'
